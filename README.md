@@ -11,9 +11,12 @@ Pour ma part, 4 relais sont utilisés.
 
 Installation :
 Dans le repertoire de l'application :
-    npm install -g node-gyp
+
+npm install -g node-gyp
+
 Ensuite, compilez le package :
-	node-gyp rebuild
+
+node-gyp rebuild
 	
 	Le script se décompose en deux parties : 
 	  app.js 
