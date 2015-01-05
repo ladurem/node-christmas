@@ -17,6 +17,9 @@ npm install -g node-gyp
 Ensuite, compilez le package :
 
 node-gyp rebuild
+
+Installez sleep : 
+npm install sleep
 	
 	Le script se décompose en deux parties : 
 	  app.js 
