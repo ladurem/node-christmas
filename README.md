@@ -18,8 +18,12 @@ Ensuite, compilez le package :
 
 node-gyp rebuild
 
-Installez sleep : 
+#Install sleep : 
+
 npm install sleep
+#Install express :
+
+npm install express
 	
 	Le script se décompose en deux parties : 
 	  app.js 
