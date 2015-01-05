@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestion Noel</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="jumbotron well">
+					<h1>
+						Gestion Sapin :
+					</h1>
+					<p>
+						<div class="btn-group btn-group-justified" role="group" aria-label="button">
+							<a href="#" class="btn btn-block btn-lg btn-success fullon"><span class="glyphicon glyphicon-thumbs-up"></span> ON ALL</a>
+							<a href="#" class="btn btn-block btn-lg btn-warning fulloff"><span class="glyphicon glyphicon-thumbs-down"></span> OFF ALL</a>
+						</div><br /><br />
+						<div class="btn-group btn-group-justified" role="group" aria-label="button">
+							<a href="#" class="btn btn-block btn-lg btn-success lighton"><span class="glyphicon glyphicon-thumbs-up"></span> ON LIGHT</a>
+							<a href="#" class="btn btn-block btn-lg btn-warning lightoff"><span class="glyphicon glyphicon-thumbs-down"></span> OFF LIGHT</a>
+						</div>
+						<hr />
+
+					</p>
+					<p>
+						<div class="btn-group btn-group-justified" role="group" aria-label="button">
+							<a href="#" class="btn btn-block btn-lg btn-success onflash"><span class="glyphicon glyphicon-thumbs-up"></span> ON FLASH</a>
+							<a href="#" class="btn btn-block btn-lg btn-warning offflash"><span class="glyphicon glyphicon-thumbs-down"></span> OFF FLASH</a>
+						</div><br />
+						<div class="btn-group btn-group-justified" role="group" aria-label="button">
+							<a href="#" class="btn btn-block btn-lg btn-success onneige"><span class="glyphicon glyphicon-thumbs-up"></span> ON NEIGE</a>
+							<a href="#" class="btn btn-block btn-lg btn-warning offneige"><span class="glyphicon glyphicon-thumbs-down"></span> OFF NEIGE</a>
+						</div><br />
+						<div class="btn-group btn-group-justified" role="group" aria-label="button">
+							<a href="#" class="btn btn-block btn-lg btn-success onproj"><span class="glyphicon glyphicon-thumbs-up"></span> ON PROJECTEUR</a>
+							<a href="#" class="btn btn-block btn-lg btn-warning offproj"><span class="glyphicon glyphicon-thumbs-down"></span> OFF PROJECTEUR</a>
+						</div><br />
+						<div class="btn-group btn-group-justified" role="group" aria-label="button">
+							<a href="#" class="btn btn-block btn-lg btn-success pnon"><span class="glyphicon glyphicon-thumbs-up"></span> ON PERENOEL</a>
+							<a href="#" class="btn btn-block btn-lg btn-warning pnoff"><span class="glyphicon glyphicon-thumbs-down"></span> OFF PERENOEL</a>
+						</div>
+
+
+					</p>
+
+
+					<script>
+						$(document).ready(function() {
+							$('.pnon').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './pnon', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+							$('.pnoff').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './pnoff', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+							$('.onproj').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './onproj', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+							$('.offproj').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './offproj', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+
+
+							$('.onneige').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './onneige', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+							$('.offneige').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './offneige', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+							$('.onflash').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './onflash', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+							$('.offflash').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './offflash', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+
+
+
+
+							$('.fullon').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './all', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+
+							});
+
+							$('.fulloff').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './off', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+							});
+							$('.lighton').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './alllight', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+							});
+							$('.lightoff').click(function(event) {
+								$.ajax({
+									type: 'GET',
+									url: './lightoff', 
+									data: '',
+									success: function(msg) {
+									}});
+								return false;
+							});
+
+						});
+
+
+</script>
+
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
